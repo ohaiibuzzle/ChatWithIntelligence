@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AB4D9EF02DFC4E77006FB75A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = AB4D9EEF2DFC4E77006FB75A /* MarkdownUI */; };
+		AB5140772E006E6E00859807 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = AB5140762E006E6E00859807 /* MarkdownUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AB644BD92DFC34FD00DC4EF4 /* ChatWithIntelligence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWithIntelligence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4D9EF02DFC4E77006FB75A /* MarkdownUI in Frameworks */,
+				AB5140772E006E6E00859807 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = ChatWithIntelligence;
 			packageProductDependencies = (
+				AB4D9EEF2DFC4E77006FB75A /* MarkdownUI */,
+				AB5140762E006E6E00859807 /* MarkdownUI */,
 			);
 			productName = ChatWithIntelligence;
 			productReference = AB644BD92DFC34FD00DC4EF4 /* ChatWithIntelligence.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = AB644BD02DFC34FD00DC4EF4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AB5140752E006E6E00859807 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AB644BDA2DFC34FD00DC4EF4 /* Products */;
 			projectDirPath = "";
@@ -349,6 +361,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB5140752E006E6E00859807 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB4D9EEF2DFC4E77006FB75A /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarkdownUI;
+		};
+		AB5140762E006E6E00859807 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB5140752E006E6E00859807 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB644BD12DFC34FD00DC4EF4 /* Project object */;
 }
